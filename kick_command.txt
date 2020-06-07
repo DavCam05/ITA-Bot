@@ -1,0 +1,4 @@
+let member = message.member.mention.first();
+member.kick().then((member) =>{
+    message.channel.send(":wave: " + member.displayName + " has been kicked!!)
+})

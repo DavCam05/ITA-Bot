@@ -1,0 +1,36 @@
+{
+  "name": "davbot",
+  "version": "1.2.1",
+  "description": "A discord bot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/davidecammarano2005/davbot.git"
+  },
+  "author": "Davide Cammarano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/davidecammarano2005/davbot/issues"
+  },
+  "homepage": "https://gitlab.com/davidecammarano2005/davbot#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "common-tags": "^1.8.0",
+    "covidapi": "^0.5.0",
+    "discord.js": "^12.2.0",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.2.2",
+    "imdb-api": "^4.0.3",
+    "node-fetch": "^2.6.0",
+    "novelcovid": "^1.2.7",
+    "opusscript": "0.0.7",
+    "querystring": "^0.2.0",
+    "request-promise-native": "^1.0.8",
+    "urban": "^0.3.2",
+    "weather-js": "^2.0.0",
+    "ytdl-core": "^2.1.6"
+  }
+}

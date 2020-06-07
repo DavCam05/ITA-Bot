@@ -1,0 +1,314 @@
+[
+  {
+    "location": {
+      "name": "San Francisco, CA",
+      "lat": "37.78",
+      "long": "-122.42",
+      "timezone": "-7",
+      "alert": "",
+      "degreetype": "C",
+      "imagerelativeurl": "http://blob.weather.microsoft.com/static/weather4/en-us/"
+    },
+    "current": {
+      "temperature": "13",
+      "skycode": "32",
+      "skytext": "Sunny",
+      "date": "2020-06-07",
+      "observationtime": "06:55:00",
+      "observationpoint": "San Francisco, CA",
+      "feelslike": "13",
+      "humidity": "73",
+      "winddisplay": "10 km/h West",
+      "day": "Sunday",
+      "shortday": "Sun",
+      "windspeed": "10 km/h",
+      "imageUrl": "http://blob.weather.microsoft.com/static/weather4/en-us/law/32.gif"
+    },
+    "forecast": [
+      {
+        "low": "12",
+        "high": "18",
+        "skycodeday": "31",
+        "skytextday": "Clear",
+        "date": "2020-06-06",
+        "day": "Saturday",
+        "shortday": "Sat",
+        "precip": ""
+      },
+      {
+        "low": "12",
+        "high": "18",
+        "skycodeday": "32",
+        "skytextday": "Sunny",
+        "date": "2020-06-07",
+        "day": "Sunday",
+        "shortday": "Sun",
+        "precip": "0"
+      },
+      {
+        "low": "12",
+        "high": "21",
+        "skycodeday": "32",
+        "skytextday": "Sunny",
+        "date": "2020-06-08",
+        "day": "Monday",
+        "shortday": "Mon",
+        "precip": "0"
+      },
+      {
+        "low": "13",
+        "high": "21",
+        "skycodeday": "34",
+        "skytextday": "Mostly Sunny",
+        "date": "2020-06-09",
+        "day": "Tuesday",
+        "shortday": "Tue",
+        "precip": "0"
+      },
+      {
+        "low": "12",
+        "high": "21",
+        "skycodeday": "32",
+        "skytextday": "Sunny",
+        "date": "2020-06-10",
+        "day": "Wednesday",
+        "shortday": "Wed",
+        "precip": "0"
+      }
+    ]
+  },
+  {
+    "location": {
+      "name": "San Francisco, Costa Rica",
+      "lat": "9.889",
+      "long": "-83.872",
+      "timezone": "-6",
+      "alert": "",
+      "degreetype": "C",
+      "imagerelativeurl": "http://blob.weather.microsoft.com/static/weather4/en-us/"
+    },
+    "current": {
+      "temperature": "22",
+      "skycode": "32",
+      "skytext": "Sunny",
+      "date": "2020-06-07",
+      "observationtime": "07:00:00",
+      "observationpoint": "San Francisco, Costa Rica",
+      "feelslike": "22",
+      "humidity": "73",
+      "winddisplay": "11 km/h East",
+      "day": "Sunday",
+      "shortday": "Sun",
+      "windspeed": "11 km/h",
+      "imageUrl": "http://blob.weather.microsoft.com/static/weather4/en-us/law/32.gif"
+    },
+    "forecast": [
+      {
+        "low": "16",
+        "high": "24",
+        "skycodeday": "27",
+        "skytextday": "Mostly Cloudy",
+        "date": "2020-06-06",
+        "day": "Saturday",
+        "shortday": "Sat",
+        "precip": ""
+      },
+      {
+        "low": "18",
+        "high": "25",
+        "skycodeday": "28",
+        "skytextday": "Mostly Cloudy",
+        "date": "2020-06-07",
+        "day": "Sunday",
+        "shortday": "Sun",
+        "precip": "100"
+      },
+      {
+        "low": "16",
+        "high": "25",
+        "skycodeday": "11",
+        "skytextday": "Rain Showers",
+        "date": "2020-06-08",
+        "day": "Monday",
+        "shortday": "Mon",
+        "precip": "100"
+      },
+      {
+        "low": "16",
+        "high": "24",
+        "skycodeday": "9",
+        "skytextday": "Light Rain",
+        "date": "2020-06-09",
+        "day": "Tuesday",
+        "shortday": "Tue",
+        "precip": "100"
+      },
+      {
+        "low": "15",
+        "high": "22",
+        "skycodeday": "11",
+        "skytextday": "Rain Showers",
+        "date": "2020-06-10",
+        "day": "Wednesday",
+        "shortday": "Wed",
+        "precip": "100"
+      }
+    ]
+  },
+  {
+    "location": {
+      "name": "San Francisco, Costa Rica",
+      "lat": "9.842",
+      "long": "-83.916",
+      "timezone": "-6",
+      "alert": "",
+      "degreetype": "C",
+      "imagerelativeurl": "http://blob.weather.microsoft.com/static/weather4/en-us/"
+    },
+    "current": {
+      "temperature": "22",
+      "skycode": "32",
+      "skytext": "Sunny",
+      "date": "2020-06-07",
+      "observationtime": "07:00:00",
+      "observationpoint": "San Francisco, Costa Rica",
+      "feelslike": "22",
+      "humidity": "73",
+      "winddisplay": "11 km/h East",
+      "day": "Sunday",
+      "shortday": "Sun",
+      "windspeed": "11 km/h",
+      "imageUrl": "http://blob.weather.microsoft.com/static/weather4/en-us/law/32.gif"
+    },
+    "forecast": [
+      {
+        "low": "16",
+        "high": "24",
+        "skycodeday": "27",
+        "skytextday": "Mostly Cloudy",
+        "date": "2020-06-06",
+        "day": "Saturday",
+        "shortday": "Sat",
+        "precip": ""
+      },
+      {
+        "low": "18",
+        "high": "25",
+        "skycodeday": "28",
+        "skytextday": "Mostly Cloudy",
+        "date": "2020-06-07",
+        "day": "Sunday",
+        "shortday": "Sun",
+        "precip": "100"
+      },
+      {
+        "low": "16",
+        "high": "25",
+        "skycodeday": "11",
+        "skytextday": "Rain Showers",
+        "date": "2020-06-08",
+        "day": "Monday",
+        "shortday": "Mon",
+        "precip": "100"
+      },
+      {
+        "low": "16",
+        "high": "24",
+        "skycodeday": "9",
+        "skytextday": "Light Rain",
+        "date": "2020-06-09",
+        "day": "Tuesday",
+        "shortday": "Tue",
+        "precip": "100"
+      },
+      {
+        "low": "15",
+        "high": "22",
+        "skycodeday": "11",
+        "skytextday": "Rain Showers",
+        "date": "2020-06-10",
+        "day": "Wednesday",
+        "shortday": "Wed",
+        "precip": "100"
+      }
+    ]
+  },
+  {
+    "location": {
+      "name": "San Francisco, Nicaragua",
+      "lat": "11.897",
+      "long": "-86.312",
+      "timezone": "-6",
+      "alert": "",
+      "degreetype": "C",
+      "imagerelativeurl": "http://blob.weather.microsoft.com/static/weather4/en-us/"
+    },
+    "current": {
+      "temperature": "26",
+      "skycode": "28",
+      "skytext": "Mostly Cloudy",
+      "date": "2020-06-07",
+      "observationtime": "07:00:00",
+      "observationpoint": "San Francisco, Nicaragua",
+      "feelslike": "26",
+      "humidity": "94",
+      "winddisplay": "4 km/h Northwest",
+      "day": "Sunday",
+      "shortday": "Sun",
+      "windspeed": "4 km/h",
+      "imageUrl": "http://blob.weather.microsoft.com/static/weather4/en-us/law/28.gif"
+    },
+    "forecast": [
+      {
+        "low": "23",
+        "high": "28",
+        "skycodeday": "27",
+        "skytextday": "Mostly Cloudy",
+        "date": "2020-06-06",
+        "day": "Saturday",
+        "shortday": "Sat",
+        "precip": ""
+      },
+      {
+        "low": "23",
+        "high": "30",
+        "skycodeday": "28",
+        "skytextday": "Mostly Cloudy",
+        "date": "2020-06-07",
+        "day": "Sunday",
+        "shortday": "Sun",
+        "precip": "100"
+      },
+      {
+        "low": "23",
+        "high": "32",
+        "skycodeday": "30",
+        "skytextday": "Partly Sunny",
+        "date": "2020-06-08",
+        "day": "Monday",
+        "shortday": "Mon",
+        "precip": "100"
+      },
+      {
+        "low": "23",
+        "high": "30",
+        "skycodeday": "9",
+        "skytextday": "Light Rain",
+        "date": "2020-06-09",
+        "day": "Tuesday",
+        "shortday": "Tue",
+        "precip": "100"
+      },
+      {
+        "low": "23",
+        "high": "29",
+        "skycodeday": "11",
+        "skytextday": "Rain Showers",
+        "date": "2020-06-10",
+        "day": "Wednesday",
+        "shortday": "Wed",
+        "precip": "100"
+      }
+    ]
+  }
+]

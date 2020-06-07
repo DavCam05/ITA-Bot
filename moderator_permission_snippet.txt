@@ -1,0 +1,3 @@
+if(message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS' //blah blah other permissions])){
+    //put your commands in here
+}
