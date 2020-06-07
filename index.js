@@ -1,12 +1,16 @@
-const Discord = require('discord.js'); //calls discord.js
-//const { stripIndents } = require('common-tags');
+//main const
+const Discord = require('discord.js'); 
+const client = new Discord.Client();
+const { prefix, version } = require('./config.json');
+
+//api call const
 const fetch = require('node-fetch'); 
 const querystring = require('querystring');
 const { get } = require('request-promise-native');
-const { prefix, token, version } = require('./config.json');
 const axios = require('axios');
-const client = new Discord.Client();
 
+
+//command controller
 const fs = require('fs');
 client.commands = new Discord.Collection();
 
@@ -27,13 +31,15 @@ function catchErr(err, message) {
 
 }
 
+//when ready function
 client.once('ready', () => {
     console.log('DavBot is ready for use!!!');
     client.user.setActivity("Black Lives Matter!!");
 
 });
 
-client.on('message', async message => { //comands for members
+//bot commands
+client.on('message', async message => { 
     try {
         let args = message.content.substring(prefix.length).split(" ");
         switch (args[0]) {
@@ -112,4 +118,4 @@ client.on('message', async message => { //comands for members
         catchErr(err, message);
     }
 });//end of client.on method
-client.login(token);
+client.login(process.env.token);
