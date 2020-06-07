@@ -110,6 +110,8 @@ client.on('message', async message => {
             message.react("👋")
         } else if (msg.includes("rich")) {
             message.react("🤑")
+        } else if (msg.includes("gay")) {
+            message.react("🏳️‍🌈");
         }
 
 
