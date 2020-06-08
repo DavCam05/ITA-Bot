@@ -109,4 +109,3 @@ temp/
 
 # End of https://www.gitignore.io/api/node
 /package-lock.json
-/config.json
