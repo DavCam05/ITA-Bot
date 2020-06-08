@@ -1,7 +1,9 @@
 //main const
 const Discord = require('discord.js'); 
 const client = new Discord.Client();
-const { prefix, version, token} = require('./config.json');
+const { token } = require('./config.json'); //use this for testing only
+const prefix = "!";
+const version = "1.2.1"
 
 //api call const
 const fetch = require('node-fetch'); 
@@ -120,4 +122,4 @@ client.on('message', async message => {
         catchErr(err, message);
     }
 });//end of client.on method
-client.login(token);
+client.login(process.env.token);
