@@ -1,9 +1,14 @@
 //main const
 const Discord = require('discord.js'); 
 const client = new Discord.Client();
-const { token } = require('./config.json'); 
+require('dotenv').config();
 const prefix = "!";
-const version = "1.2.1"
+const version = "1.2.1" //version of the bot. Update package.json also
+
+const config = {
+    token: process.env.TOKEN
+
+}
 
 //api call const
 const fetch = require('node-fetch'); 
@@ -122,4 +127,4 @@ client.on('message', async message => {
         catchErr(err, message);
     }
 });//end of client.on method
-client.login(token);
+client.login(config.token);
