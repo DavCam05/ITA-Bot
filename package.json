@@ -17,6 +17,7 @@
   },
   "homepage": "https://gitlab.com/davidecammarano2005/davbot#readme",
   "dependencies": {
+    "ascii-art": "^2.5.0",
     "axios": "^0.19.2",
     "common-tags": "^1.8.0",
     "covidapi": "^0.5.0",
