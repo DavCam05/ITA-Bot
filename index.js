@@ -54,6 +54,10 @@ client.on('message', async message => {
                 client.commands.get('ping').execute(message, args);
                 break;
             }
+            case 'meme' :{
+                client.commands.get('meme').execute(message, args);
+                break;
+            }  
             case 'anime': { //searches on kitsu
                 client.commands.get('anime').execute(message, args, get, Discord);
                 break;
