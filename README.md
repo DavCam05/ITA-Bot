@@ -14,6 +14,12 @@ make sure you have the lates node.js and npm release.
 Run:
 `npm install`
 
+Then type in the terminal:
+`node .`
+
+You should see `DavBot is ready to use!!` in the terminal
+
+>**Note**: V1.2.1 needs a confing.json to hold the token. Follow the guide below to fix this into a .env
 Make a .env file and write
 `TOKEN=[your token here]`
 
@@ -27,10 +33,7 @@ const config = {
 client.login(config.token)
 ```
 
-Then type in the terminal:
-`node .`
 
-You should see `DavBot is ready to use!!` in the terminal
 
 ## Usage
 Once you have the project installed and running go to https://discordapi.com/permissions.html#8
