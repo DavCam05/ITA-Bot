@@ -6,8 +6,8 @@ const prefix = "!";
 const version = "1.2.1" //version of the bot. Update package.json also
 
 const config = {
-    token: process.env.TOKEN
-
+    token: process.env.TOKEN//s,
+    //omdb: process.env.OMDB
 }
 
 //api call const
@@ -45,13 +45,26 @@ client.once('ready', () => {
 
 });
 
+//sends welcome message to the general channel
+client.on('guildMemberAdd', async member => {
+    const channel = member.guild.channels.find(channel => channel.name == 'general');
+    if (!channel) return;
+    
+    channel.send(`Welcome to ${guild.name}, ${member}!!!. Don't forget to check the rules!!`);
+})
+
 //bot commands
 client.on('message', async message => { 
     try {
         let args = message.content.substring(prefix.length).split(" ");
+    
         switch (args[0]) {
             case 'ping': {
                 client.commands.get('ping').execute(message, args);
+                break;
+            }
+            case 'omdb': {
+                client.commands.get('omdb').execute(message, args); //movies on omdb
                 break;
             }
             case 'meme' :{
@@ -124,7 +137,6 @@ client.on('message', async message => {
         } else if (msg.includes("gay")) {
             message.react("🏳️‍🌈");
         }
-
 
     }// end of try method
     catch (err) {
