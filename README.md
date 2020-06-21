@@ -1,7 +1,7 @@
 # DavBot
 
 DavBot is a discord bot using discord.js v12. 
-Currently active on https://discord.me/thed4ccrusaders Discord server
+Currently active on https://thed4ccrusaders.glitch.me Discord server
 Hosted on a Raspberry Pi 3B+ 
 
 You can use this [invite link](https://discordapp.com/oauth2/authorize?client_id=716403885622951937&scope=bot&permissions=2146958847) to invite the bot to your server
