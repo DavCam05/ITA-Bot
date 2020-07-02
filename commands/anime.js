@@ -7,9 +7,10 @@ module.exports = {
             message.channel.send("What are you searching for 🤷‍♂️? Specify an Anime name. I can't read your mind (yet).")
             return;
         }
+        console.log(args.slice(1, args.lenght));
 
         let option = {
-            url: `https://kitsu.io/api/edge/anime?filter[text]=${args.join(" ")}`,
+            url: `https://kitsu.io/api/edge/anime?filter[text]=${args.slice(1, args.lenght)}`,
             method: 'GET',
             headers: {
                 'Content-Type': "application/vnd.api+json",
@@ -39,7 +40,7 @@ module.exports = {
                         .addField('Status', body.data[0].attributes.status)
                         .addField('Episode Count', body.data[0].attributes.episodeCount + " 🎥")
                         //.setImage(body.data[0].attributes.coverImage)
-                        .addField('Brought to you by', "DavBot")
+                        .addField('Brought to you by', "Scottish Man")
 
                     message.channel.send(embed);
                 } catch (err) {

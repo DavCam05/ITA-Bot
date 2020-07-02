@@ -17,7 +17,6 @@
   },
   "homepage": "https://gitlab.com/davidecammarano2005/davbot#readme",
   "dependencies": {
-    "ascii-art": "^2.5.0",
     "axios": "^0.19.2",
     "common-tags": "^1.8.0",
     "custom-env": "^2.0.1",
@@ -26,7 +25,6 @@
     "node-fetch": "^2.6.0",
     "opusscript": "0.0.7",
     "querystring": "^0.2.0",
-    "quick.db": "^7.1.1",
     "request-promise-native": "^1.0.8",
     "urban": "^0.3.2",
     "weather-js": "^2.0.0"

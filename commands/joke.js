@@ -16,7 +16,7 @@ module.exports = {
             .setColor(0x005AB9)
             .addField('Joke', jokeValue.setup)
             .addField('Punchline', jokeValue.punchline)
-            .addField('Brought to you by:', "DavBot");
+            .addField('Brought to you by:', "Scottish Man");
         
         message.channel.send(embed);
     }

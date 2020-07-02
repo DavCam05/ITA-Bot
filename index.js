@@ -40,18 +40,11 @@ function catchErr(err, message) {
 
 //when ready function
 client.once('ready', () => {
-    console.log('DavBot is ready for use!!!');
-    client.user.setActivity("Black Lives Matter!!");
+    console.log('Scottish Man is ready for use!!!');
+    client.user.setActivity("Scottish Rebellion 2023");
 
 });
 
-//sends welcome message to the general channel
-client.on('guildMemberAdd', async member => {
-    const channel = member.guild.channels.find(channel => channel.name == 'general');
-    if (!channel) return;
-    
-    channel.send(`Welcome to ${guild.name}, ${member}!!!. Don't forget to check the rules!!`);
-})
 
 //bot commands
 client.on('message', async message => { 
@@ -70,7 +63,11 @@ client.on('message', async message => {
             case 'meme' :{
                 client.commands.get('meme').execute(message, args);
                 break;
-            }  
+            }
+            case 'manga': { //searches for manga
+                client.commands.get('manga').execute(message, args, get, Discord);
+                break;
+                }
             case 'anime': { //searches on kitsu
                 client.commands.get('anime').execute(message, args, get, Discord);
                 break;
