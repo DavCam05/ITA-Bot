@@ -11,7 +11,7 @@
     "url": "git+https://gitlab.com/davidecammarano2005/davbot.git"
   },
   "author": "Davide Cammarano",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/davidecammarano2005/davbot/issues"
   },
