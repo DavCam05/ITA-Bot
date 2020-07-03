@@ -1,8 +1,7 @@
 # Scottish Man
 
 Scottish Man is a discord bot using discord.js v12. 
-Currently active on https://scottishrebellion2023.glitch.me Discord server
-Hosted on Heroku
+Currently active on https://scottishrebellion2023.glitch.me Discord server. the bot is hosted on Heroku
 
 You can use this [invite link](https://discordapp.com/oauth2/authorize?client_id=728006626002468985&scope=bot&permissions=2146958847) to invite the bot to your server
 
