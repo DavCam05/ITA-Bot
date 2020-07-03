@@ -7,7 +7,7 @@ module.exports = {
             return;
         }
         if(args[1] === 'author'){
-            message.channel.send("The developer of this bot is TheDeveloper");
+            message.channel.send("The developer of this bot is TheDeveloper#2860");
             return;
         }
         if(args[1] === 'servers'){
