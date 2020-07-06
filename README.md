@@ -20,7 +20,7 @@ Then type in the terminal:
 
 You should see `Scottish Man is ready to use!!` in the terminal
 
-Open an issue if you have problems
+Open an issue if you have problems or if you want to add features
 
 
 ## Usage
