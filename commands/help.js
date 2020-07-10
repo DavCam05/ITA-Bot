@@ -51,6 +51,53 @@ module.exports = {
             message.channel.send(embed);   
             return;
         }
-
+        if (args[1] === 'hello') {
+            let embed = new Discord.MessageEmbed()
+                .setTitle("!hello")
+                .setDescription("This command sends a hello message")
+                .addField('Usage', "`!hello`");
+            message.channel.send(embed);   
+            return;
+        }
+        if (args[1] === 'ping') {
+            let embed = new Discord.MessageEmbed()
+                .setTitle("!ping")
+                .setDescription("A variation of the command `!hello`")
+                .addField('Usage', "`!ping`");
+            message.channel.send(embed);   
+            return;
+        }
+        if (args[1] === 'omdb') {
+            let embed = new Discord.MessageEmbed()
+                .setTitle("!omdb")
+                .setDescription("This command searches the Open Movie Database for movie info (Note: Can be inaccurate)")
+                .addField('Usage', "`!omdb [movie seach]`");
+            message.channel.send(embed);   
+            return;
+        }
+        if (args[1] === 'meme') {
+            let embed = new Discord.MessageEmbed()
+                .setTitle("!meme")
+                .setDescription("This command sends a random meme")
+                .addField('Usage', "`!meme`");
+            message.channel.send(embed);   
+            return;
+        }
+        if (args[1] === 'manga') {
+            let embed = new Discord.MessageEmbed()
+                .setTitle("!manga")
+                .setDescription("This command searches the Kitsu API for manga info")
+                .addField('Usage', "`!manga [search here]`");
+            message.channel.send(embed);   
+            return;
+        }
+        if (args[1] === 'info') {
+            let embed = new Discord.MessageEmbed()
+                .setTitle("!info")
+                .setDescription("This command sends info about the bot ")
+                .addField('Usage', "`!info [args]`");
+            message.channel.send(embed);   
+            return;
+        }
     }
 }
