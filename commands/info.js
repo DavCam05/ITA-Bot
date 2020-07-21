@@ -10,8 +10,8 @@ module.exports = {
             message.channel.send("The developer of this bot is TheDeveloper#2860");
             return;
         }
-        if(args[1] === 'servers'){
-            message.channel.send("Scottish Bot is only available on The Scottish Rebellion 2023 (for now) ");
+        if(args[1] === 'server'){
+            message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`)
         }
         else{
             message.channel.send("Specify an argument for the command info. Example: !info author");

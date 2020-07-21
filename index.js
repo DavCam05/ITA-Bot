@@ -50,12 +50,15 @@ client.once('ready', () => {
 client.on('message', async message => { 
     try {
         let args = message.content.substring(prefix.length).split(" ");
-    
         switch (args[0]) {
             case 'ping': {
                 client.commands.get('ping').execute(message, args);
                 break;
             }
+            case 'invitegen': {
+                client.commands.get('invitegen').execute(message, args);
+                break;
+                }
             case 'omdb': {
                 client.commands.get('omdb').execute(message, args); //movies on omdb
                 break;
@@ -95,7 +98,7 @@ client.on('message', async message => {
             case 'weather': {
                 client.commands.get('weather').execute(client, message, args, querystring/*Other variables*/);                
                 break;
-                }
+            }
             /*case 'error': { use this to test the try catch function
                 client.commands.get('error').execute(message, args);
                 break;
@@ -140,4 +143,5 @@ client.on('message', async message => {
         catchErr(err, message);
     }
 });//end of client.on method
+
 client.login(config.token);
