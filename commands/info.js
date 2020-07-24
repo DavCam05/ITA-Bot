@@ -3,7 +3,7 @@ module.exports = {
     description: "Gives all possible information about the bot. Specify an argument after !info",
     execute(message, args, version){
         if(args[1] === 'version'){
-            message.channel.send("The current version of Davbot is: " + version);
+            message.channel.send("The current version of Scottish Bot is: " + version);
             return;
         }
         if(args[1] === 'author'){

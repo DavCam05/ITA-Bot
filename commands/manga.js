@@ -40,7 +40,7 @@ module.exports = {
                         .addField('Status', body.data[0].attributes.status)
                         .addField('Next Release', body.data[0].attributes.nextRelease + " 📔")
                         //.setImage(body.data[0].attributes.coverImage)
-                        .addField('Brought to you by', "Scottish Man")
+                        .addField('Brought to you by', "Scottish Bot")
 
                     message.channel.send(embed);
                 } catch (err) {

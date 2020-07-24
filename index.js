@@ -30,9 +30,9 @@ for (const file of commandFiles) {
 
 //function for catching errors
 function catchErr(err, message) {
-    console.log("DavBot has run into an error");
+    console.log("The Bot has run into an error");
     console.log(err);
-    message.channel.send("DavBot has run into an error. Call my developer and he will fix me in no time. (as long as the error is easy to solve)");
+    message.channel.send("The bot has run into an error. Call my developer and he will fix me in no time. (as long as the error is easy to solve)");
     message.channel.send("Here is the error:");
     message.channel.send("ERROR" + "```" + err + "```");
 
@@ -40,8 +40,8 @@ function catchErr(err, message) {
 
 //when ready function
 client.once('ready', () => {
-    console.log('Scottish Man is ready for use!!!');
-    client.user.setActivity("Scottish Rebellion 2023");
+    console.log('Scottish Bot is ready for use!!!');
+    client.user.setActivity("Commands", 'LISTENING')
 
 });
 

@@ -19,7 +19,7 @@ module.exports = {
                     .setColor()
                     .setDescription(list[0].definition)
                     .setThumbnail('https://i.imgur.com/VFXr0ID.jpg')
-                    .addField('Brought to you by:', "Scottish Man");
+                    .addField('Brought to you by:', "Scottish Bot");
 
                 message.channel.send("Warning: Urban Dictionary contains NSFW (Not Safe For Work) content. The content intended for people with 18+ years");
                 message.channel.send("🔍 Searching Urban Dictionary...")
