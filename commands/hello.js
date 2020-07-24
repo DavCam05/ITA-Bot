@@ -2,6 +2,6 @@ module.exports = {
     name: 'hello',
     description: "responds with hello.",
     execute(message, args){
-        message.channel.send("Hello this is Scottish Bot");
+        message.channel.send("Hello this is ITA Bot!");
     }
 }

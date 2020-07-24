@@ -38,7 +38,7 @@ module.exports = {
                         )
                         .setThumbnail(json.Poster)
                         .setColor(0xFBFF01)
-                        .addField('Brought to you by', "Scottish Bot");
+                        .addField('Brought to you by', "ITA Bot");
 
                     message.channel.send(embed);
                 })

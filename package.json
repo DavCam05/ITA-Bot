@@ -1,5 +1,5 @@
 {
-  "name": "scottishbot",
+  "name": "itabot",
   "version": "2.1.0",
   "description": "A discord bot ",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DavCam05/scottish"
+    "url": "https://github.com/DavCam05/ITA-Bot"
   },
   "author": "Davide Cammarano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DavCam05/scottish-bot.git"
+    "url": "https://github.com/DavCam05/ITA-Bot.git"
   },
-  "homepage": "https://github.com/DavCam05/scottish-bot/blob/master/README.md",
+  "homepage": "https://github.com/DavCam05/ITA-Bot/blob/master/README.md",
   "dependencies": {
     "axios": "^0.19.2",
     "common-tags": "^1.8.0",

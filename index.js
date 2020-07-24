@@ -40,8 +40,8 @@ function catchErr(err, message) {
 
 //when ready function
 client.once('ready', () => {
-    console.log('Scottish Bot is ready for use!!!');
-    client.user.setActivity("Commands", 'LISTENING')
+    console.log('ITA Bot is ready for use!!!');
+    client.user.setActivity("Scottish Rebellion 2023", { type: "WATCHING" });
 
 });
 

@@ -28,7 +28,7 @@ module.exports = {
                             { name: "Wind", value: result[0].current.winddisplay, inline: true }
                         )
                         .setThumbnail('http://blob.weather.microsoft.com/static/weather4/en-us/law/28.gif')
-                        .addField("Brought to you by", "Scottish Bot");
+                        .addField("Brought to you by", "ITA Bot");
                  
                     message.channel.send(embed);
                 } catch(err){

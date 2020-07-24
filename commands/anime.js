@@ -40,7 +40,7 @@ module.exports = {
                         .addField('Status', body.data[0].attributes.status)
                         .addField('Episode Count', body.data[0].attributes.episodeCount + " 🎥")
                         //.setImage(body.data[0].attributes.coverImage)
-                        .addField('Brought to you by', "Scottish Bot")
+                        .addField('Brought to you by', "ITA Bot")
 
                     message.channel.send(embed);
                 } catch (err) {
