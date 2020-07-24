@@ -1,6 +1,6 @@
 {
-  "name": "davbot",
-  "version": "2.0.0",
+  "name": "scottishbot",
+  "version": "2.1.0",
   "description": "A discord bot ",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/davidecammarano2005/davbot.git"
+    "url": "https://github.com/DavCam05/scottish"
   },
   "author": "Davide Cammarano",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/davidecammarano2005/davbot/issues"
+    "url": "https://github.com/DavCam05/scottish-bot.git"
   },
-  "homepage": "https://gitlab.com/davidecammarano2005/davbot#readme",
+  "homepage": "https://github.com/DavCam05/scottish-bot/blob/master/README.md",
   "dependencies": {
     "axios": "^0.19.2",
     "common-tags": "^1.8.0",
