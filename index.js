@@ -1,5 +1,5 @@
 //main const
-const Discord = require('discord.js'); 
+const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config();
 const prefix = "!";
@@ -11,7 +11,7 @@ const config = {
 }
 
 //api call const
-const fetch = require('node-fetch'); 
+const fetch = require('node-fetch');
 const querystring = require('querystring');
 const { get } = require('request-promise-native');
 const axios = require('axios');
@@ -45,9 +45,21 @@ client.once('ready', () => {
 
 });
 
+client.on('guildMemberAdd', member => {
+    try {
+        const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log');
+        if (!channel) return;
+
+        channel.send(`Welcome to the server ${member}`);
+
+    } catch (err) {
+        catchErr(err, message);
+    }
+})
+
 
 //bot commands
-client.on('message', async message => { 
+client.on('message', async message => {
     try {
         let args = message.content.substring(prefix.length).split(" ");
         switch (args[0]) {
@@ -58,19 +70,19 @@ client.on('message', async message => {
             case 'invitegen': {
                 client.commands.get('invitegen').execute(message, args);
                 break;
-                }
+            }
             case 'omdb': {
                 client.commands.get('omdb').execute(message, args); //movies on omdb
                 break;
             }
-            case 'meme' :{
+            case 'meme': {
                 client.commands.get('meme').execute(message, args);
                 break;
             }
             case 'manga': { //searches for manga
                 client.commands.get('manga').execute(message, args, get, Discord);
                 break;
-                }
+            }
             case 'anime': { //searches on kitsu
                 client.commands.get('anime').execute(message, args, get, Discord);
                 break;
@@ -80,7 +92,7 @@ client.on('message', async message => {
                 break;
             }
             case 'pokemon': { //searches the pokeapi. cannot be moved on command controller because it requires async
-               client.commands.get('pokemon').execute(message, args, fetch, querystring, Discord);
+                client.commands.get('pokemon').execute(message, args, fetch, querystring, Discord);
                 break;
             }
             case 'joke': { //prints a random joke
@@ -96,9 +108,21 @@ client.on('message', async message => {
                 break;
             }
             case 'weather': {
-                client.commands.get('weather').execute(client, message, args, querystring/*Other variables*/);                
+                client.commands.get('weather').execute(client, message, args, querystring/*Other variables*/);
                 break;
             }
+            case 'kick': {
+                client.commands.get('kick').execute(message, args);
+                break;
+                }
+            case 'online': {
+                client.commands.get('online').execute(message, args);
+                break;
+            }
+            /*case 'role-check': {
+                client.commans.get('role-check').execute(message, args);
+                break;
+            }*/
             /*case 'error': { use this to test the try catch function
                 client.commands.get('error').execute(message, args);
                 break;
@@ -136,6 +160,8 @@ client.on('message', async message => {
             message.react("🤑")
         } else if (msg.includes("gay")) {
             message.react("🏳️‍🌈");
+        } else if (msg.includes("pineapple on pizza")) {
+            message.channel.send("You idiota. What the hell is wrong-a with you. Fruit does not-a go on pizza. Do not-a mention this again-a!!")
         }
 
     }// end of try method
