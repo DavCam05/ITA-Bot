@@ -91,10 +91,6 @@ client.on('message', async message => {
                 client.commands.get('anime').execute(message, args, get, Discord);
                 break;
             }
-            case 'urban': {//searches urban dictionary. cannot be moved on command controller because it requires async
-                client.commands.get('urban').execute(message, args, querystring, fetch, Discord);
-                break;
-            }
             case 'pokemon': { //searches the pokeapi. cannot be moved on command controller because it requires async
                 client.commands.get('pokemon').execute(message, args, fetch, querystring, Discord);
                 break;
