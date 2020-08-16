@@ -115,14 +115,14 @@ client.on('message', async message => {
                 client.commands.get('kick').execute(message, args);
                 break;
                 }
+            case 'role-check': {
+                client.commands.get('role-check').execute(message, args);
+                break;
+                }
             case 'online': {
                 client.commands.get('online').execute(message, args);
                 break;
             }
-            /*case 'role-check': {
-                client.commans.get('role-check').execute(message, args);
-                break;
-            }*/
             /*case 'error': { use this to test the try catch function
                 client.commands.get('error').execute(message, args);
                 break;
