@@ -160,7 +160,7 @@ client.on('message', async message => {
             message.react("🤑")
         } else if (msg.includes("gay")) {
             message.react("🏳️‍🌈");
-        } else if (msg.includes("pineapple on pizza")) {
+        } else if (msg.includes("pineapple on pizza" || "pineapple on the pizza" || "pineapple on my pizza" || "pizza with pineapple")) {
             message.channel.send("You idiota. What the hell is wrong-a with you. Fruit does not-a go on pizza. Do not-a mention this again-a!!")
         } else if (msg.includes("pineapple pizza")) {
         message.channel.send("You idiota. What the hell is wrong-a with you. Fruit does not-a go on pizza. Do not-a mention this again-a!!")
