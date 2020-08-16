@@ -75,6 +75,10 @@ client.on('message', async message => {
                 client.commands.get('omdb').execute(message, args); //movies on omdb
                 break;
             }
+            case 'dictionary': {
+                client.commands.get('dictionary').execute(message, args);
+                break;
+            }
             case 'meme': {
                 client.commands.get('meme').execute(message, args);
                 break;
