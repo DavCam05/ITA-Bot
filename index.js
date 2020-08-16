@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config();
 const prefix = "!";
-const version = "2.0.0" //version of the bot. Update package.json also
+const version = "2.1.0" //version of the bot. Update package.json also
 
 const config = {
     token: process.env.TOKEN//s,
@@ -162,7 +162,9 @@ client.on('message', async message => {
             message.react("🏳️‍🌈");
         } else if (msg.includes("pineapple on pizza")) {
             message.channel.send("You idiota. What the hell is wrong-a with you. Fruit does not-a go on pizza. Do not-a mention this again-a!!")
-        }
+        } else if (msg.includes("pineapple pizza")) {
+        message.channel.send("You idiota. What the hell is wrong-a with you. Fruit does not-a go on pizza. Do not-a mention this again-a!!")
+    }
 
     }// end of try method
     catch (err) {
