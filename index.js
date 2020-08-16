@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config();
 const prefix = "!";
-const version = "2.1.0" //version of the bot. Update package.json also
+const version = "2.2.0" //version of the bot. Update package.json also
 
 const config = {
     token: process.env.TOKEN//s,
@@ -41,7 +41,7 @@ function catchErr(err, message) {
 //when ready function
 client.once('ready', () => {
     console.log('ITA Bot is ready for use!!!');
-    client.user.setActivity("Scottish Rebellion 2023", { type: "WATCHING" });
+    client.user.setActivity("Version 2.2.0", { type: "CUSTOM_STATUS" });
 
 });
 
