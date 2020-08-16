@@ -41,7 +41,7 @@ function catchErr(err, message) {
 //when ready function
 client.once('ready', () => {
     console.log('ITA Bot is ready for use!!!');
-    client.user.setActivity("Version 2.2.0", { type: "CUSTOM_STATUS" });
+    client.user.setActivity("Version 2.2.0", { type: "PLAYING" });
 
 });
 
