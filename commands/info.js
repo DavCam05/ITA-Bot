@@ -17,7 +17,7 @@ module.exports = {
             message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`)
         }
         if(args[1] === 'history'){
-            message.channel.send(`My very first name was DavBot. I was renamed Scottish Bot. My current name is ITA Bot`)
+            message.channel.send(`My very first name was DavBot. My current name is ITA Bot`)
         }
         else{
             message.channel.send("Specify an argument for the command info. Example: !info author");

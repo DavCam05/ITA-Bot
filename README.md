@@ -2,8 +2,7 @@
 
 ITA Bot is a discord bot using discord.js v12.
 ITA is the Italian Country Abbreviation
- 
-Currently active on https://scottishrebellion2023.glitch.me Discord server. the bot is hosted on Heroku
+The Bot is hosted on Heroku platform
 
 You can use this [invite link](https://discordapp.com/oauth2/authorize?client_id=728006626002468985&scope=bot&permissions=2146958847) to invite the bot to your server
 
