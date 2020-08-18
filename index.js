@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config();
 const prefix = "!";
-const version = "2.2.0" //version of the bot. Update package.json also
+const version = "2.2.1" //version of the bot. Update package.json also
 
 const config = {
     token: process.env.TOKEN//s,
