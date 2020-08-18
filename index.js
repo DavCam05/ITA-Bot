@@ -41,7 +41,7 @@ function catchErr(err, message) {
 //when ready function
 client.once('ready', () => {
     console.log('ITA Bot is ready for use!!!');
-    client.user.setActivity("Version 2.2.0", { type: "PLAYING" });
+    client.user.setActivity("Version 2.2.1", { type: "PLAYING" });
 
 });
 
@@ -87,6 +87,10 @@ client.on('message', async message => {
                 client.commands.get('manga').execute(message, args, get, Discord);
                 break;
             }
+           /* case 'a': { //attachments
+                client.commands.get('a').execute(message, args);
+                break;
+            }*/
             case 'anime': { //searches on kitsu
                 client.commands.get('anime').execute(message, args, get, Discord);
                 break;
@@ -158,6 +162,8 @@ client.on('message', async message => {
             message.react("👋")
         } else if (msg.includes("rich")) {
             message.react("🤑")
+        } else if (msg.includes("pog")) {
+            message.react("😎");
         } else if (msg.includes("gay")) {
             message.react("🏳️‍🌈");
         } else if (msg.includes("pineapple on pizza" || "pineapple on the pizza" || "pineapple on my pizza" || "pizza with pineapple")) {
