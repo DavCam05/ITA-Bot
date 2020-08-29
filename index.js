@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config();
 const prefix = "!";
-const version = "2.2.1" //version of the bot. Update package.json also
+const version = "2.3.1" //version of the bot. Update package.json also
 
 const config = {
     token: process.env.TOKEN//s,
@@ -41,7 +41,7 @@ function catchErr(err, message) {
 //when ready function
 client.once('ready', () => {
     console.log('ITA Bot is ready for use!!!');
-    client.user.setActivity("Pre-Release 2.3.1", { type: "PLAYING" });
+    client.user.setActivity("Version 2.3.1", { type: "PLAYING" });
 
 });
 
@@ -56,7 +56,7 @@ client.on('guildMemberAdd', member => {
             .setTitle("Security Alert!!")
             .setDescription(`Hello there ${member}! Thanks for joining the server. Due to some security concerns we (Admins) are protecting the server from self-bots and scam bots. You are required to send a DM to any of the Admins. You have 30 mins to do this. If no message is recieved you will be kicked from the server `)
         .addField('Contact Developer', "TheDeveloper#2860")
-        member.send();
+        member.send(embed);
 
     } catch (err) {
         catchErr(err, message);
