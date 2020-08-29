@@ -41,23 +41,27 @@ function catchErr(err, message) {
 //when ready function
 client.once('ready', () => {
     console.log('ITA Bot is ready for use!!!');
-    client.user.setActivity("Version 2.2.1", { type: "PLAYING" });
+    client.user.setActivity("Pre-Release 2.3.1", { type: "PLAYING" });
 
 });
 
 client.on('guildMemberAdd', member => {
     try {
-        const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log');
+        const channel = member.guild.channels.cache.find(ch => ch.name === 'general');
         if (!channel) return;
 
         channel.send(`Welcome to the server ${member}`);
+        
+        let embed = new Discord.MessageEmbed()
+            .setTitle("Security Alert!!")
+            .setDescription(`Hello there ${member}! Thanks for joining the server. Due to some security concerns we (Admins) are protecting the server from self-bots and scam bots. You are required to send a DM to any of the Admins. You have 30 mins to do this. If no message is recieved you will be kicked from the server `)
+        .addField('Contact Developer', "TheDeveloper#2860")
+        member.send();
 
     } catch (err) {
         catchErr(err, message);
     }
 })
-
-
 //bot commands
 client.on('message', async message => {
     try {
@@ -75,6 +79,11 @@ client.on('message', async message => {
                 client.commands.get('omdb').execute(message, args); //movies on omdb
                 break;
             }
+            case 'testdm': {
+                message.author.send("This is a test DM!!");
+                message.channel.send("DM Sent");
+                break;
+                }
             case 'dictionary': {
                 client.commands.get('dictionary').execute(message, args);
                 break;
