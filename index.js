@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config();
 const prefix = "!";
-const version = "2.3.1" //version of the bot. Update package.json also
+const version = "2.3.2" //version of the bot. Update package.json also
 
 const config = {
     token: process.env.TOKEN//s,
@@ -41,7 +41,7 @@ function catchErr(err, message) {
 //when ready function
 client.once('ready', () => {
     console.log('ITA Bot is ready for use!!!');
-    client.user.setActivity("Version 2.3.1", { type: "PLAYING" });
+    client.user.setActivity("Expect Bugs", { type: "PLAYING" });
 
 });
 
@@ -66,6 +66,7 @@ client.on('guildMemberAdd', member => {
 client.on('message', async message => {
     try {
         let args = message.content.substring(prefix.length).split(" ");
+        
         switch (args[0]) {
             case 'ping': {
                 client.commands.get('ping').execute(message, args);
@@ -76,6 +77,7 @@ client.on('message', async message => {
                 break;
             }
             case 'omdb': {
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('omdb').execute(message, args); //movies on omdb
                 break;
             }
@@ -85,14 +87,17 @@ client.on('message', async message => {
                 break;
                 }
             case 'dictionary': {
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('dictionary').execute(message, args);
                 break;
             }
             case 'meme': {
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('meme').execute(message, args);
                 break;
             }
             case 'manga': { //searches for manga
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('manga').execute(message, args, get, Discord);
                 break;
             }
@@ -101,14 +106,17 @@ client.on('message', async message => {
                 break;
             }*/
             case 'anime': { //searches on kitsu
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('anime').execute(message, args, get, Discord);
                 break;
             }
-            case 'pokemon': { //searches the pokeapi. cannot be moved on command controller because it requires async
+            case 'pokemon': { //searches the pokeapi. 
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('pokemon').execute(message, args, fetch, querystring, Discord);
                 break;
             }
             case 'joke': { //prints a random joke
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('joke').execute(message, args, axios, Discord);
                 break;
             }
@@ -121,6 +129,7 @@ client.on('message', async message => {
                 break;
             }
             case 'weather': {
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('weather').execute(client, message, args, querystring/*Other variables*/);
                 break;
             }
@@ -133,6 +142,7 @@ client.on('message', async message => {
                 break;
                 }
             case 'online': {
+                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
                 client.commands.get('online').execute(message, args);
                 break;
             }
