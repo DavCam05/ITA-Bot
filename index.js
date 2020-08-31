@@ -41,7 +41,7 @@ function catchErr(err, message) {
 //when ready function
 client.once('ready', () => {
     console.log('ITA Bot is ready for use!!!');
-    client.user.setActivity("Expect Bugs", { type: "PLAYING" });
+    client.user.setActivity("Version 2.3.2", { type: "PLAYING" });
 
 });
 
