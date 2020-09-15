@@ -77,7 +77,7 @@ client.on('message', async message => {
                 break;
             }
             case 'omdb': {
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('omdb').execute(message, args); //movies on omdb
                 break;
             }
@@ -87,17 +87,17 @@ client.on('message', async message => {
                 break;
                 }
             case 'dictionary': {
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('dictionary').execute(message, args);
                 break;
             }
             case 'meme': {
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('meme').execute(message, args);
                 break;
             }
             case 'manga': { //searches for manga
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('manga').execute(message, args, get, Discord);
                 break;
             }
@@ -106,17 +106,17 @@ client.on('message', async message => {
                 break;
             }*/
             case 'anime': { //searches on kitsu
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('anime').execute(message, args, get, Discord);
                 break;
             }
             case 'pokemon': { //searches the pokeapi. 
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('pokemon').execute(message, args, fetch, querystring, Discord);
                 break;
             }
             case 'joke': { //prints a random joke
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('joke').execute(message, args, axios, Discord);
                 break;
             }
@@ -129,7 +129,7 @@ client.on('message', async message => {
                 break;
             }
             case 'weather': {
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('weather').execute(client, message, args, querystring/*Other variables*/);
                 break;
             }
@@ -142,7 +142,7 @@ client.on('message', async message => {
                 break;
                 }
             case 'online': {
-                message.channel.send("Like the bot? Why not support the owner @ https://patreon.com/davidecammarano")
+                message.channel.send("Like the bot? Why not support the owner using the command !donate")
                 client.commands.get('online').execute(message, args);
                 break;
             }
@@ -152,6 +152,9 @@ client.on('message', async message => {
             }*/
             case 'help': {
                 client.commands.get('help').execute(message, args, Discord, version);
+            }
+            case 'donate': {
+                client.commands.get('donate').execute(message, args);
             }
         }//end of switch 
 
