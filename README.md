@@ -1,4 +1,5 @@
 # ITA Bot
+## No Longer Mantained
 
 ITA Bot is a discord bot using discord.js v12.
 ITA is the Italian Country Abbreviation
